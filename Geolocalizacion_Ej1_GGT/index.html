@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis lugares favoritos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        html, body 
+        {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #map 
+        {
+            height: 100%;
+            width: 100%;
+        }
+        #map .leaflet-marker-icon.leaflet-green-icon 
+        {
+            filter: hue-rotate(120deg);
+        }
+        h1 
+        {
+            text-align: center;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis lugares favoritos</h1>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
